@@ -1,0 +1,35 @@
+﻿
+
+
+
+1. download postgresql zip from 
+
+( https://www.postgresql.org/download/windows/ )
+https://www.enterprisedb.com/download-postgresql-binaries
+
+
+
+2. unzip
+c:\works\pgsql
+3. open command 관리자권한으로 실행
+4. pgsql\bin으로 이동
+cmd> cd c:\works\pgsql\bin\
+c:\works\pgsql\bin> 
+5. database 초기화하기
+c:\works\pgsql\bin>  initdb.exe -D  ../data  -U=postgres  -A=trust
+6. start database
+c:\works\pgsql\bin> pg_ctl.exe  -D  ../data
+ex) pg_ctl  -D ../data -I  logfile  start
+
+7. open another cmd
+8. enter into the bin directory
+9. log into the database
+c:\works\pgsql\bin> psql  -U=postgres
+10. create password your user
+pgsql> alter user postgres with password 'pass';
+11. install adminpack extension
+1. create extension adminpack;
+ 
+
+
+

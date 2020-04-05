@@ -1,0 +1,16 @@
+﻿1. download installer
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+2. install
+directory: c:\programs\pgsql
+password: pass
+port: 5432
+
+3. 설치가 완료되면 
+windows 시작 > pgadmin 실행
+
+
+3. postgresql connector 설치
+(pyml)> pip install psycopg2
+
+
