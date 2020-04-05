@@ -1,0 +1,17 @@
++------------
+"mariadb"  service 가 있는지 확인부터 하세요. 
+ctrl+shift+delete 누르면 > windows 작업관리자 > 서비스 탭 >...mariadb 서비스이름이 있는지 볼것..
+있으면 -> 그대로 사용하거나, 서비스를 지우고 다시 설치하거나 결정하세요
+서비스지우는 명령어
+관리자 권한으로 command 창을 실행해서 다음 명령어를 실행하세요
+> sc delete mariadb
++------------
+
+1) mariadb zip download: 
+
+2) mariadb install by command
+> cd c:\works\mariadb\bin\
+c:\works\mariadb\bin>  mysql_install_db --datadir=C:\works\mariadb\data --service="mariadb" --port=3306 --password=pass
+
+
+
